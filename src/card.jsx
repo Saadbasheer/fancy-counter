@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Count from "./count";
 import CountContainer from "./CountContainer";
-import ResetButton from "./resetbutton";
+import ResetButton from "./ResetButton";
 import Title from "./title";
 
 export default function Card() {
@@ -36,7 +36,7 @@ export default function Card() {
     <div className="card">
       <Title />
       <Count count={count} />
-      <ResetButton setCount={setCount} />
+      <ResetButton setCount={setCount}  />
       <CountContainer count={count} setCount={setCount} />
     </div>
   );
