@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Count from "./count";
 import CountContainer from "./CountContainer";
-import Resetbutton from "./resetbutton";
+import ResetButton from "./resetbutton";
 import Title from "./title";
 
 export default function Card() {
@@ -20,7 +20,7 @@ export default function Card() {
         }
         setCount(newCount);
       }
-      
+
       else if (event.code === "KeyR") {
         setCount(0);
       }
@@ -36,7 +36,7 @@ export default function Card() {
     <div className="card">
       <Title />
       <Count count={count} />
-      <Resetbutton setCount={setCount} />
+      <ResetButton setCount={setCount} />
       <CountContainer count={count} setCount={setCount} />
     </div>
   );
